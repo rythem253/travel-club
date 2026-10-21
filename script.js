@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             const UsrContent = document.getElementById("username");
 
             if (UsrContent.value.trim() == "") {
-                UsrErrorSpan.textContent = "Username is Required";
+                UsrErrorSpan.textContent = "Username is required";
                 UsrContent.classList.add("error-border");
                 UsrErrorSpan.style.display = "block";
                 isValid = false
@@ -101,7 +101,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         const pictures = document.querySelectorAll(".thumb");
         const caption = document.getElementById("image-caption");
-        const cityName = document.getElementById("data-city");
 
         pictures.forEach(tile => {
             tile.addEventListener("click", () => {
