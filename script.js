@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
             let isValid = true;
 
             //Password error handling
-            let errPassword = document.getElementById("password");
-            let passContent = errPassword.value;
-            let passLen = passContent.length;
+            const errPassword = document.getElementById("password");
+            const passContent = errPassword.value;
+            const passLen = passContent.length;
 
             const PassErrorSpan = document.getElementById("error-password");
 
